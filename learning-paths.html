@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Paths — ROSE Tech Academy</title>
+  <meta name="description" content="Explore six structured technology learning paths covering cybersecurity, data analytics, cloud computing, AI, project management, and generative AI.">
+  <meta name="theme-color" content="#0B1F3A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="js/main.js" defer></script>
+
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="site-nav" id="site-nav" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo" aria-label="ROSE Tech Academy home">
+          <img src="images/logo.png" alt="ROSE Tech Academy - Innovate. Connect. Grow." class="nav-logo-img">
+        </a>
+      <ul class="nav-links" role="list">
+        <li><a href="./" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="learning-paths.html" class="nav-link">Learning Paths</a></li>
+        <li><a href="career-resources.html" class="nav-link">Careers</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="partners.html" class="nav-link">Partners</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-theme-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+        <a href="learning-paths.html" class="nav-cta">Explore Learning Paths</a>
+        <button class="nav-menu-btn" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+  <ul class="mobile-menu-links" role="list">
+    <li><a href="./" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="learning-paths.html" class="nav-link">Learning Paths</a></li>
+    <li><a href="career-resources.html" class="nav-link">Career Resources</a></li>
+    <li><a href="blog.html" class="nav-link">Blog</a></li>
+    <li><a href="partners.html" class="nav-link">Partners</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="mobile-menu-cta">
+    <a href="learning-paths.html" class="btn btn-primary btn-lg">Explore Learning Paths</a>
+    <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+  </div>
+</div>
+
+<main id="main-content">
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container page-hero-inner">
+    <div class="breadcrumb" data-reveal>
+      <a href="./">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>Learning Paths</span>
+    </div>
+    <div class="page-hero-eyebrow" data-reveal data-delay="1">6 Structured Paths</div>
+    <h1 class="page-hero-title" id="page-title" data-reveal data-delay="2">Explore Learning Paths</h1>
+    <p class="page-hero-subtitle" data-reveal data-delay="3">Every path is curated with trusted resources and mapped to industry-recognized certifications—so you always know your next step, and why it matters.</p>
+  </div>
+</section>
+
+<!-- ============ PATHS GRID ============ -->
+<section class="section" aria-labelledby="paths-title">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:var(--space-10)" data-reveal>
+      <p class="section-label">All Paths</p>
+      <h2 class="section-title" id="paths-title">Find the Path That Fits Your Goals</h2>
+      <p class="section-subtitle" style="margin-inline:auto">Each path includes a full breakdown of key skills, recommended resources, and target certifications.</p>
+    </div>
+    <div class="grid-3">
+      <a href="path-cybersecurity.html" class="path-card" data-reveal data-delay="1">
+        <div class="path-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h3 class="path-card-title">Cybersecurity</h3>
+          <p class="path-card-desc">Protect digital systems and develop the security skills organizations need most in today's threat landscape.</p>
+          <div style="margin-top:var(--space-3)"><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">Security+</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">CISSP</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">CEH</span></div>
+        </div>
+        <span class="path-card-link">
+          Explore Path
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+      <a href="path-data-analytics.html" class="path-card" data-reveal data-delay="2">
+        <div class="path-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        </div>
+        <div>
+          <h3 class="path-card-title">Data Analytics</h3>
+          <p class="path-card-desc">Learn to analyze, visualize, and communicate data to support smarter business decisions and insights.</p>
+          <div style="margin-top:var(--space-3)"><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">DP-900</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">Google Data Analytics</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">IBM Data Analyst</span></div>
+        </div>
+        <span class="path-card-link">
+          Explore Path
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+      <a href="path-cloud-computing.html" class="path-card" data-reveal data-delay="3">
+        <div class="path-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+        </div>
+        <div>
+          <h3 class="path-card-title">Cloud Computing</h3>
+          <p class="path-card-desc">Build cloud skills with Microsoft Azure, AWS, and Google Cloud through structured, hands-on learning resources.</p>
+          <div style="margin-top:var(--space-3)"><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">AZ-900</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">AWS CLF-C02</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">Google ACE</span></div>
+        </div>
+        <span class="path-card-link">
+          Explore Path
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+      <a href="path-artificial-intelligence.html" class="path-card" data-reveal data-delay="1">
+        <div class="path-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 0 1 5 5v3M12 2a5 5 0 0 0-5 5v3m10 0H7a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2zm-6 5v2m4-2v2"/></svg>
+        </div>
+        <div>
+          <h3 class="path-card-title">Artificial Intelligence</h3>
+          <p class="path-card-desc">Explore AI fundamentals, machine learning, and practical AI applications shaping the future of every industry.</p>
+          <div style="margin-top:var(--space-3)"><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">AI-900</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">Google AI</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">AWS AI Practitioner</span></div>
+        </div>
+        <span class="path-card-link">
+          Explore Path
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+      <a href="path-project-management.html" class="path-card" data-reveal data-delay="2">
+        <div class="path-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </div>
+        <div>
+          <h3 class="path-card-title">Project Management</h3>
+          <p class="path-card-desc">Develop planning, delivery, Agile, Scrum, and leadership skills recognized by employers across industries.</p>
+          <div style="margin-top:var(--space-3)"><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">PMP</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">CAPM</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">PMI-ACP</span></div>
+        </div>
+        <span class="path-card-link">
+          Explore Path
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+      <a href="path-generative-ai.html" class="path-card" data-reveal data-delay="3">
+        <div class="path-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 5.8H19l-4.9 3.6 1.9 5.8L12 15l-4 3.2 1.9-5.8L5 8.8h5.1z"/></svg>
+        </div>
+        <div>
+          <h3 class="path-card-title">Generative AI</h3>
+          <p class="path-card-desc">Discover modern AI tools, prompt engineering, automation workflows, and responsible AI practices.</p>
+          <div style="margin-top:var(--space-3)"><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">AI-900</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">Prompt Engineering</span><span style="display:inline-block;padding:4px 10px;border-radius:var(--radius-full);background:var(--color-surface-2);font-size:var(--text-xs);color:var(--color-text-muted);margin:0 6px 6px 0">Google GenAI</span></div>
+        </div>
+        <span class="path-card-link">
+          Explore Path
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section" style="background:var(--color-surface-2)" aria-labelledby="how-title">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:var(--space-10)" data-reveal>
+      <p class="section-label">How It Works</p>
+      <h2 class="section-title" id="how-title">From Curious to Certified</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card" data-reveal data-delay="1">
+        <div class="value-icon"><span style="font-family:var(--font-display);font-weight:800">1</span></div>
+        <h3 class="value-title">Choose a Path</h3>
+        <p class="value-desc">Pick the technology area that matches your interests and career goals.</p>
+      </div>
+      <div class="value-card" data-reveal data-delay="2">
+        <div class="value-icon"><span style="font-family:var(--font-display);font-weight:800">2</span></div>
+        <h3 class="value-title">Follow the Roadmap</h3>
+        <p class="value-desc">Work through curated resources in order, at your own pace.</p>
+      </div>
+      <div class="value-card" data-reveal data-delay="3">
+        <div class="value-icon"><span style="font-family:var(--font-display);font-weight:800">3</span></div>
+        <h3 class="value-title">Earn Certifications</h3>
+        <p class="value-desc">Sit for the industry-recognized exams that employers value most.</p>
+      </div>
+      <div class="value-card" data-reveal data-delay="1">
+        <div class="value-icon"><span style="font-family:var(--font-display);font-weight:800">4</span></div>
+        <h3 class="value-title">Launch Your Career</h3>
+        <p class="value-desc">Apply your new skills and credentials with confidence in the job market.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section" style="background:var(--color-primary);text-align:center" aria-labelledby="cta-title">
+  <div class="container">
+    <div data-reveal>
+      <h2 class="section-title" id="cta-title" style="color:#fff">Not Sure Where to Start?</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.7);margin-inline:auto">Browse our career resources for guidance on choosing the right path for your goals.</p>
+      <div style="margin-top:var(--space-6)">
+        <a href="career-resources.html" class="btn btn-primary btn-lg">Visit Career Resources</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="./" class="footer-logo" aria-label="ROSE Tech Academy home">
+          <img src="images/logo.png" alt="ROSE Tech Academy" class="footer-logo-img">
+        </a>
+        <p class="footer-desc">Helping learners build technology skills, earn industry certifications, and confidently pursue careers in the digital workforce.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://learn.microsoft.com" class="footer-social-link" aria-label="Microsoft Learn" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="0" y="0" width="7" height="7" fill="rgba(255,255,255,0.6)"/><rect x="9" y="0" width="7" height="7" fill="rgba(255,255,255,0.6)"/><rect x="0" y="9" width="7" height="7" fill="rgba(255,255,255,0.6)"/><rect x="9" y="9" width="7" height="7" fill="rgba(255,255,255,0.6)"/></svg>
+          </a>
+          <a href="mailto:hello@rosetechacademy.com" class="footer-social-link" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Company</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="about.html">About ROSE</a></li>
+          <li><a href="about.html#mission">Our Mission</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Learning Paths</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="path-cloud-computing.html">Cloud Computing</a></li>
+          <li><a href="path-cybersecurity.html">Cybersecurity</a></li>
+          <li><a href="path-data-analytics.html">Data Analytics</a></li>
+          <li><a href="path-artificial-intelligence.html">Artificial Intelligence</a></li>
+          <li><a href="path-project-management.html">Project Management</a></li>
+          <li><a href="path-generative-ai.html">Generative AI</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Resources</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="career-resources.html">Career Resources</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="learning-paths.html">All Learning Paths</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Legal</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-use.html">Terms of Use</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        <p class="footer-copyright">© 2024–2025 ROSE Tech Academy. All rights reserved.</p>
+        <p class="footer-microsoft-badge">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="0" y="0" width="6" height="6" fill="rgba(255,255,255,0.3)"/><rect x="8" y="0" width="6" height="6" fill="rgba(255,255,255,0.3)"/><rect x="0" y="8" width="6" height="6" fill="rgba(255,255,255,0.3)"/><rect x="8" y="8" width="6" height="6" fill="rgba(255,255,255,0.3)"/></svg>
+          Microsoft 365 Powered
+        </p>
+      </div>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-use.html">Terms</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

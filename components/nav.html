@@ -1,0 +1,58 @@
+<!-- ROSE Tech Academy — Shared Navigation Component (reference only) -->
+<nav class="site-nav" id="site-nav" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="./" class="nav-logo" aria-label="ROSE Tech Academy home">
+        <svg class="nav-logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="8" fill="#0B1F3A"/>
+          <path d="M10 27V10h8.5c2.1 0 3.7.5 4.8 1.5s1.7 2.4 1.7 4.1c0 1.2-.3 2.2-.9 3s-1.4 1.4-2.5 1.7l4.4 6.7h-3.6l-3.9-6.1H13V27h-3zm3-8.8h5.2c1.1 0 1.9-.3 2.5-.8s.8-1.3.8-2.3-.3-1.8-.8-2.3-1.4-.8-2.5-.8H13v6.2z" fill="white"/>
+          <circle cx="27" cy="9" r="3" fill="#C9A84C"/>
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">ROSE Tech Academy</span>
+          <span class="nav-logo-tagline">Technology Education</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links" role="list">
+        <li><a href="./" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="learning-paths.html" class="nav-link">Learning Paths</a></li>
+        <li><a href="career-resources.html" class="nav-link">Careers</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="partners.html" class="nav-link">Partners</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="nav-theme-btn" data-theme-toggle aria-label="Toggle dark mode">
+          <!-- Icon injected by JS -->
+        </button>
+        <a href="learning-paths.html" class="nav-cta">Explore Learning Paths</a>
+        <button class="nav-menu-btn" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="Mobile navigation">
+  <ul class="mobile-menu-links" role="list">
+    <li><a href="./" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="learning-paths.html" class="nav-link">Learning Paths</a></li>
+    <li><a href="career-resources.html" class="nav-link">Career Resources</a></li>
+    <li><a href="blog.html" class="nav-link">Blog</a></li>
+    <li><a href="partners.html" class="nav-link">Partners</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="mobile-menu-cta">
+    <a href="learning-paths.html" class="btn btn-primary btn-lg">Explore Learning Paths</a>
+    <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+  </div>
+</div>

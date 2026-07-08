@@ -1,0 +1,140 @@
+/* ============================================================
+   ROSE TECH ACADEMY — Footer
+   Slate Gray background, teal and gold accents
+   ============================================================ */
+
+.site-footer {
+  background: #3A4447;
+  color: rgba(255,255,255,0.72);
+  padding-top: clamp(var(--space-12), 8vw, var(--space-20));
+  padding-bottom: var(--space-8);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  margin-bottom: var(--space-4);
+}
+
+.footer-logo-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+}
+
+.footer-logo-tagline {
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4FA3C5;
+  margin-top: 2px;
+  display: block;
+}
+
+.footer-desc {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.52);
+  line-height: 1.7;
+  max-width: 30ch;
+  margin-bottom: var(--space-5);
+}
+
+.footer-social { display: flex; gap: var(--space-2); }
+
+.footer-social-link {
+  width: 36px; height: 36px;
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.52);
+  text-decoration: none;
+  transition: background var(--transition-interactive), color var(--transition-interactive), border-color var(--transition-interactive);
+}
+.footer-social-link:hover {
+  background: rgba(79,163,197,0.22);
+  border-color: rgba(79,163,197,0.50);
+  color: #4FA3C5;
+}
+
+.footer-col-title {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.03em;
+  margin-bottom: var(--space-4);
+}
+
+.footer-links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-2); }
+
+.footer-links li a {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.52);
+  text-decoration: none;
+  transition: color var(--transition-interactive);
+  line-height: 1.5;
+}
+.footer-links li a:hover { color: #4FA3C5; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.10);
+  padding-top: var(--space-6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.footer-copyright { font-size: var(--text-xs); color: rgba(255,255,255,0.32); }
+
+.footer-microsoft-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,0.32);
+  margin-top: var(--space-1);
+}
+
+.footer-bottom-links { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+
+.footer-bottom-links a {
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,0.38);
+  text-decoration: none;
+  transition: color var(--transition-interactive);
+}
+.footer-bottom-links a:hover { color: #4FA3C5; }
+
+@media (max-width: 900px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-8); }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-desc { max-width: 100%; }
+}
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* Image logo in footer */
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+  object-fit: contain;
+}

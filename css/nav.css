@@ -1,0 +1,232 @@
+/* ============================================================
+   ROSE TECH ACADEMY — Navigation
+   White background, dark text, teal accent
+   ============================================================ */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #FFFFFF;
+  border-bottom: 1px solid var(--color-divider);
+  transition:
+    box-shadow var(--transition-interactive),
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-nav--scrolled {
+  box-shadow: var(--shadow-sm);
+}
+
+.site-nav--hidden {
+  transform: translateY(-100%);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  gap: var(--space-6);
+}
+
+/* ── Logo ── */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav-logo-mark {
+  width: 38px;
+  height: 46px;
+  flex-shrink: 0;
+}
+
+.nav-logo-img {
+  height: 56px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.nav-logo-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.nav-logo-tagline {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+/* ── Desktop links ── */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: color var(--transition-interactive), background var(--transition-interactive);
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--color-text);
+  background: var(--color-surface-2);
+}
+
+.nav-link.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* ── Nav actions ── */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.nav-theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+}
+
+.nav-theme-btn:hover {
+  color: var(--color-text);
+  background: var(--color-surface-2);
+}
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-5);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  background: #2B7A9A;
+  color: #FFFFFF;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  border: 2px solid #2B7A9A;
+  cursor: pointer;
+  transition: background var(--transition-interactive), transform var(--transition-interactive), box-shadow var(--transition-interactive);
+}
+
+.nav-cta:hover {
+  background: #1E6080;
+  border-color: #1E6080;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Mobile menu button ── */
+.nav-menu-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+}
+
+/* ── Mobile menu ── */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 70px 0 0 0;
+  background: #FFFFFF;
+  border-top: 1px solid var(--color-divider);
+  padding: var(--space-6);
+  z-index: 99;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.mobile-menu-links .nav-link {
+  font-size: var(--text-base);
+  padding: var(--space-3) var(--space-4);
+}
+
+.mobile-menu-cta {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+@media (max-width: 900px) {
+  .nav-links  { display: none; }
+  .nav-cta    { display: none; }
+  .nav-menu-btn { display: flex; }
+  .mobile-menu  { display: block; }
+}
+
+@media (max-width: 480px) {
+  .nav-logo-tagline { display: none; }
+}
+
+/* ── Dark mode nav ── */
+[data-theme='dark'] .site-nav,
+[data-theme='dark'] .mobile-menu {
+  background: var(--color-surface);
+  border-bottom-color: var(--color-divider);
+}

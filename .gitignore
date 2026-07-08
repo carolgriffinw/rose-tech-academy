@@ -1,0 +1,6 @@
+.DS_Store
+*.py
+__pycache__/
+*.pyc
+_snippets.py
+build_*.py
