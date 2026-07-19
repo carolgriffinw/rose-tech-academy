@@ -10,17 +10,16 @@ on:
       - main
   workflow_dispatch:
 
-permissions:
-  contents: read
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Build
+    permissions:
+      contents: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
