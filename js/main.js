@@ -105,24 +105,50 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const forms = document.querySelectorAll('[data-newsletter-form]');
   forms.forEach(form => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const input = form.querySelector('input[type="email"]');
       const btn = form.querySelector('button[type="submit"]');
-      if (!input || !input.value) return;
+      if (!input || !input.value.trim()) return;
 
-      btn.textContent = 'Subscribed!';
+      const originalText = btn.textContent;
+      btn.textContent = 'Sending…';
       btn.disabled = true;
-      btn.style.background = 'var(--color-success)';
-      btn.style.color = '#fff';
-      input.value = '';
 
-      setTimeout(() => {
-        btn.textContent = 'Subscribe';
+      try {
+        const data = new FormData();
+        data.append('email', input.value.trim());
+        data.append('_subject', 'New Newsletter Subscription — ROSE Tech Academy');
+
+        const action = form.action;
+        if (!action) return;
+        const response = await fetch(action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          btn.textContent = 'Subscribed! ✓';
+          btn.style.background = 'var(--color-success)';
+          btn.style.color = '#fff';
+          input.value = '';
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.disabled = false;
+            btn.style.background = '';
+            btn.style.color = '';
+          }, 4000);
+        } else {
+          btn.textContent = 'Try again';
+          btn.disabled = false;
+          setTimeout(() => { btn.textContent = originalText; }, 3000);
+        }
+      } catch {
+        btn.textContent = 'Try again';
         btn.disabled = false;
-        btn.style.background = '';
-        btn.style.color = '';
-      }, 3000);
+        setTimeout(() => { btn.textContent = originalText; }, 3000);
+      }
     });
   });
 });
