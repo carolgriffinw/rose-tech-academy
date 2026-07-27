@@ -260,19 +260,19 @@ a, button, [role='button'], input, textarea, select {
 .input::placeholder { color: var(--color-text-faint); }
 
 /* ── Path icon colors ── */
-.path-cyber { --path-color: #1E7A9B; --path-bg: #D4EEF7; }
-.path-data  { --path-color: #2E7D5A; --path-bg: #C8E8D8; }
-.path-cloud { --path-color: #4FA3C5; --path-bg: #D6EDF5; }
-.path-ai    { --path-color: #7A4BAB; --path-bg: #EAD8F8; }
-.path-pm    { --path-color: #C07A20; --path-bg: #F5E4C4; }
-.path-genai { --path-color: #2B7A9A; --path-bg: #D0E8F4; }
+.path-cyber { --path-color: #000000; --path-bg: #EAE5DF; }
+.path-data  { --path-color: #000000; --path-bg: #EAE5DF; }
+.path-cloud { --path-color: #000000; --path-bg: #EAE5DF; }
+.path-ai    { --path-color: #000000; --path-bg: #EAE5DF; }
+.path-pm    { --path-color: #000000; --path-bg: #EAE5DF; }
+.path-genai { --path-color: #000000; --path-bg: #EAE5DF; }
 
-[data-theme='dark'] .path-cyber { --path-bg: #0D2430; }
-[data-theme='dark'] .path-data  { --path-bg: #0D2018; }
-[data-theme='dark'] .path-cloud { --path-bg: #0D1E30; }
-[data-theme='dark'] .path-ai    { --path-bg: #1E0D30; }
-[data-theme='dark'] .path-pm    { --path-bg: #201808; }
-[data-theme='dark'] .path-genai { --path-bg: #0D1C28; }
+[data-theme='dark'] .path-cyber { --path-bg: #EAE5DF; }
+[data-theme='dark'] .path-data  { --path-bg: #EAE5DF; }
+[data-theme='dark'] .path-cloud { --path-bg: #EAE5DF; }
+[data-theme='dark'] .path-ai    { --path-bg: #EAE5DF; }
+[data-theme='dark'] .path-pm    { --path-bg: #EAE5DF; }
+[data-theme='dark'] .path-genai { --path-bg: #EAE5DF; }
 
 /* Form validation error state */
 .input-error {
