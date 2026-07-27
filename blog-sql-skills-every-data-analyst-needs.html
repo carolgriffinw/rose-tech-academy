@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Skills Every Data Analyst Needs — ROSE Tech Academy</title>
+  <meta name="description" content="The essential SQL concepts and query patterns that show up in real data analyst interviews and day-to-day work.">
+  <meta name="author" content="ROSE Tech Academy">
+  <meta property="og:description" content="The essential SQL concepts and query patterns that show up in real data analyst interviews and day-to-day work.">
+  <meta property="og:title" content="SQL Skills Every Data Analyst Needs — ROSE Tech Academy">
+  <meta property="og:type" content="article">
+  <meta name="theme-color" content="#0B1F3A">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:image" content="https://rosetechacademy.com/images/logo.png">
+  <meta property="og:url" content="https://rosetechacademy.com/blog-sql-skills-every-data-analyst-needs.html">
+  <link rel="canonical" href="https://rosetechacademy.com/blog-sql-skills-every-data-analyst-needs.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="js/main.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "SQL Skills Every Data Analyst Needs",
+    "description": "The essential SQL concepts and query patterns that show up in real data analyst interviews and day-to-day work.",
+    "author": {"@type": "Organization", "name": "ROSE Tech Academy"},
+    "publisher": {"@type": "Organization", "name": "ROSE Tech Academy", "url": "https://rosetechacademy.com"},
+    "datePublished": "2025-03-01",
+    "url": "https://rosetechacademy.com/blog-sql-skills-every-data-analyst-needs.html"
+  }
+  </script>
+</head>
+<body>
+
+<nav class="site-nav" id="site-nav" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo" aria-label="ROSE Tech Academy home">
+          <img src="images/logo.png" alt="ROSE Tech Academy - Innovate. Connect. Grow." class="nav-logo-img">
+        </a>
+      <ul class="nav-links" role="list">
+        <li><a href="./" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="learning-paths.html" class="nav-link">Learning Paths</a></li>
+        <li><a href="career-resources.html" class="nav-link">Careers</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="partners.html" class="nav-link">Partners</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-theme-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+        <a href="learning-paths.html" class="nav-cta">Explore Learning Paths</a>
+        <button class="nav-menu-btn" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+  <ul class="mobile-menu-links" role="list">
+    <li><a href="./" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="learning-paths.html" class="nav-link">Learning Paths</a></li>
+    <li><a href="career-resources.html" class="nav-link">Career Resources</a></li>
+    <li><a href="blog.html" class="nav-link">Blog</a></li>
+    <li><a href="partners.html" class="nav-link">Partners</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="mobile-menu-cta">
+    <a href="learning-paths.html" class="btn btn-primary btn-lg">Explore Learning Paths</a>
+    <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+  </div>
+</div>
+
+<main id="main-content">
+
+<!-- ============ ARTICLE HERO ============ -->
+<section class="article-hero" aria-labelledby="article-title">
+  <div class="container article-hero-inner">
+    <div class="breadcrumb" data-reveal>
+      <a href="./">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="blog.html">Blog</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>Data Analytics</span>
+    </div>
+    <h1 class="page-hero-title" id="article-title" data-reveal data-delay="1" style="max-width:20ch">SQL Skills Every Data Analyst Needs</h1>
+    <div class="article-meta-bar" data-reveal data-delay="2">
+      <span class="article-cat">Data Analytics</span>
+      <span>ROSE Tech Academy</span>
+      <span>·</span>
+      <time datetime="2025-03-01">2025-03-01</time>
+      <span>·</span>
+      <span>6 min read</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARTICLE BODY ============ -->
+<div class="container">
+  <div class="article-layout">
+    <article class="article-prose" aria-label="Article content">
+      <p id="overview">SQL — Structured Query Language — is the lingua franca of data. Nearly every data analyst role requires it, most data engineering positions demand fluency in it, and even business intelligence tools like Power BI and Tableau use SQL under the hood. If you are pursuing a career in data, mastering SQL is not optional. This guide covers the concepts that matter most in real interviews and real work.</p>
+
+      <h2 id="key-steps">1. SELECT, WHERE, and ORDER BY</h2>
+      <p>Every SQL journey starts with retrieving data. Understanding how to filter rows with WHERE clauses and sort results with ORDER BY is the foundation everything else is built on. Pay particular attention to:</p>
+      <ul>
+        <li>Filtering with multiple conditions (AND, OR, NOT)</li>
+        <li>Pattern matching with LIKE and wildcards</li>
+        <li>Handling NULL values with IS NULL / IS NOT NULL</li>
+        <li>Sorting on multiple columns and controlling ASC/DESC order</li>
+      </ul>
+
+      <h2>2. Aggregation: GROUP BY, HAVING, and Aggregate Functions</h2>
+      <p>Aggregation is where SQL becomes genuinely powerful. The GROUP BY clause lets you summarise data across categories — total revenue by region, average order size by product, customer count by cohort. Aggregate functions you must master:</p>
+      <ul>
+        <li>COUNT(), COUNT(DISTINCT column)</li>
+        <li>SUM(), AVG(), MIN(), MAX()</li>
+        <li>HAVING (filters on aggregated results, unlike WHERE which filters rows)</li>
+      </ul>
+      <p>A classic interview question: "Write a query to find all customers who placed more than five orders last month." That's a GROUP BY on customer_id with a HAVING COUNT(*) > 5 and a date filter in the WHERE clause.</p>
+
+      <h2 id="certifications">3. JOINs: The Most Important SQL Concept</h2>
+      <p>Data rarely lives in a single table. JOINs are how you combine data across tables, and they are the source of the most common interview questions. You must understand:</p>
+      <ul>
+        <li><strong>INNER JOIN</strong> — Returns rows with matches in both tables. The most common join.</li>
+        <li><strong>LEFT JOIN</strong> — Returns all rows from the left table, and matching rows from the right. Nulls fill unmatched right-table columns.</li>
+        <li><strong>RIGHT JOIN</strong> — The mirror of LEFT JOIN. Less common but occasionally tested.</li>
+        <li><strong>FULL OUTER JOIN</strong> — Returns all rows from both tables, with nulls where there is no match.</li>
+        <li><strong>Self JOIN</strong> — Joining a table to itself. Common in hierarchical data (e.g., employee/manager relationships).</li>
+      </ul>
+
+      <div class="article-callout">
+        <div class="article-callout-title">💡 Interview Tip</div>
+        <p>Draw a Venn diagram of each JOIN type before your interview. Interviewers frequently ask candidates to explain joins visually, and a clear mental model will give you confidence.</p>
+      </div>
+
+      <h2>4. Window Functions</h2>
+      <p>Window functions are the mark of an intermediate-to-advanced SQL practitioner. They allow calculations across a set of rows related to the current row, without collapsing the result like GROUP BY does. Key window functions:</p>
+      <ul>
+        <li><strong>ROW_NUMBER()</strong> — Assigns a unique row number within a partition</li>
+        <li><strong>RANK() / DENSE_RANK()</strong> — Ranks rows within a partition</li>
+        <li><strong>LAG() / LEAD()</strong> — Accesses previous/next row values</li>
+        <li><strong>SUM() OVER() / AVG() OVER()</strong> — Running totals and moving averages</li>
+      </ul>
+      <p>A common interview question: "Find the top 3 sales by product category." Without window functions, this requires a complex subquery. With RANK() OVER (PARTITION BY category ORDER BY sales DESC), it's five lines.</p>
+
+      <h2>5. Subqueries and CTEs</h2>
+      <p>Common Table Expressions (CTEs) with WITH clauses make complex queries readable and maintainable. They are preferred over deeply nested subqueries in production code and are increasingly tested in interviews. Practice refactoring a multi-level subquery into a CTE — it demonstrates both SQL skill and professional code habits.</p>
+
+      <h2 id="next-steps">6. Data Manipulation: INSERT, UPDATE, DELETE</h2>
+      <p>Analysts mostly read data, but understanding how to write it is important for data quality work. Know how UPDATE with WHERE works, why DELETE without WHERE is dangerous, and when to use TRUNCATE vs DELETE.</p>
+
+      <h2>Practice Resources</h2>
+      <p>The best way to learn SQL is to write queries against real data. Free practice platforms include:</p>
+      <ul>
+        <li>Mode Analytics SQL Tutorial (excellent free curriculum)</li>
+        <li>LeetCode Database problems (popular for interview prep)</li>
+        <li>StrataScratch (real interview questions from top companies)</li>
+        <li>SQLZoo (interactive exercises by topic)</li>
+      </ul>
+      <p>Explore the <a href="path-data-analytics.html">ROSE Tech Academy Data Analytics Learning Path</a> for a structured guide to building SQL and business intelligence skills.</p>
+    </article>
+
+    <aside class="article-sidebar" aria-label="Article sidebar">
+      <div class="article-sidebar-card">
+        <h3>In This Article</h3>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#key-steps">Key Steps</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#next-steps">Next Steps</a></li>
+        </ul>
+      </div>
+      <div class="article-sidebar-card">
+        <h3>Explore Learning Paths</h3>
+        <ul>
+          <li><a href="path-cloud-computing.html">☁️ Cloud Computing</a></li>
+          <li><a href="path-cybersecurity.html">🔐 Cybersecurity</a></li>
+          <li><a href="path-data-analytics.html">📊 Data Analytics</a></li>
+          <li><a href="path-artificial-intelligence.html">🤖 Artificial Intelligence</a></li>
+          <li><a href="path-project-management.html">📋 Project Management</a></li>
+          <li><a href="path-generative-ai.html">✨ Generative AI</a></li>
+        </ul>
+      </div>
+      <div class="article-sidebar-card" style="background:var(--color-primary);border-color:var(--color-primary)">
+        <h3 style="color:#fff">Free Newsletter</h3>
+        <p style="font-size:var(--text-sm);color:rgba(255,255,255,0.8);margin-bottom:var(--space-4)">Get career guides and certification tips in your inbox.</p>
+        <a href="index.html#newsletter" class="btn" style="background:#fff;color:var(--color-primary);width:100%;justify-content:center;display:flex">Subscribe</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ============ RELATED ARTICLES ============ -->
+<section class="section" style="background:var(--color-surface-2);border-top:1px solid var(--color-divider)" aria-labelledby="related-title">
+  <div class="container">
+    <h2 class="section-title" id="related-title" data-reveal>Related Articles</h2>
+    <div class="article-related-grid" data-reveal data-delay="1">
+<a href="blog-free-vs-paid-data-analytics-courses.html" class="article-card"><div class="article-card-image"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,31,58,0.85),rgba(30,107,90,0.6));display:flex;align-items:center;justify-content:center;"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div></div><div class="article-card-body"><span class="article-card-category">Data</span><h3 class="article-card-title">Free vs Paid Data Analytics Courses: What's Worth Paying For</h3></div></a>
+<a href="blog-how-to-write-a-technology-resume-with-no-experience.html" class="article-card"><div class="article-card-image"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,31,58,0.85),rgba(139,90,11,0.6));display:flex;align-items:center;justify-content:center;"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg></div></div><div class="article-card-body"><span class="article-card-category">Career</span><h3 class="article-card-title">How to Write a Technology Resume With No Experience</h3></div></a>
+<a href="blog-negotiating-your-first-tech-salary.html" class="article-card"><div class="article-card-image"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,31,58,0.85),rgba(139,30,60,0.6));display:flex;align-items:center;justify-content:center;"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg></div></div><div class="article-card-body"><span class="article-card-category">Career</span><h3 class="article-card-title">Negotiating Your First Tech Salary</h3></div></a>
+    </div>
+    <div style="text-align:center;margin-top:var(--space-8)" data-reveal data-delay="2">
+      <a href="blog.html" class="btn btn-outline">View All Articles</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="./" class="footer-logo" aria-label="ROSE Tech Academy home">
+          <img src="images/logo.png" alt="ROSE Tech Academy" class="footer-logo-img">
+        </a>
+        <p class="footer-desc">Helping learners build technology skills, earn industry certifications, and confidently pursue careers in the digital workforce.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com/company/rosetechacademy" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:hello@rosetechacademy.com" class="footer-social-link" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Company</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="about.html">About ROSE</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Learning Paths</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="path-cloud-computing.html">Cloud Computing</a></li>
+          <li><a href="path-cybersecurity.html">Cybersecurity</a></li>
+          <li><a href="path-data-analytics.html">Data Analytics</a></li>
+          <li><a href="path-artificial-intelligence.html">Artificial Intelligence</a></li>
+          <li><a href="path-project-management.html">Project Management</a></li>
+          <li><a href="path-generative-ai.html">Generative AI</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Resources</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="career-resources.html">Career Resources</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Legal</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-use.html">Terms of Use</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>
+        <p class="footer-copyright">© 2024–2025 ROSE Tech Academy. All rights reserved.</p>
+      </div>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-use.html">Terms</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
