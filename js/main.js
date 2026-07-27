@@ -120,7 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
         data.append('email', input.value.trim());
         data.append('_subject', 'New Newsletter Subscription — ROSE Tech Academy');
 
-        const action = form.action || 'https://formspree.io/f/carolgriffinw@icloud.com';
+        const action = form.action;
+        if (!action) return;
         const response = await fetch(action, {
           method: 'POST',
           body: data,
