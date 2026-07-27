@@ -10,7 +10,8 @@
 :root,
 [data-theme='light'] {
   /* Surfaces */
-  --color-bg: #F5F1ED;
+  --color-bg: #FFFFFF;
+  --color-bg-home: #F5F1ED;
   --color-surface: #FFFFFF;
   --color-surface-2: #F0ECE7;
   --color-surface-offset: #EAE5DF;
@@ -97,6 +98,7 @@
 
 [data-theme='dark'] {
   --color-bg: #181E22;
+  --color-bg-home: #181E22;
   --color-surface: #1E262C;
   --color-surface-2: #232E36;
   --color-surface-offset: #283540;
@@ -130,7 +132,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --color-bg: #181E22; --color-surface: #1E262C; --color-surface-2: #232E36;
+    --color-bg: #181E22; --color-bg-home: #181E22; --color-surface: #1E262C; --color-surface-2: #232E36;
     --color-surface-offset: #283540; --color-surface-offset-2: #2E3C48;
     --color-surface-dynamic: #384858; --color-divider: #273240; --color-border: #344455;
     --color-text: #E8EEF2; --color-text-muted: #8AACB8; --color-text-faint: #4A6878;
