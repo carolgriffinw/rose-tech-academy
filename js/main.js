@@ -131,7 +131,8 @@ document.addEventListener('DOMContentLoaded', () => {
           btn.textContent = 'Try again';
           btn.disabled = false;
         }
-      } catch {
+      } catch (err) {
+        console.error('Newsletter form submission failed:', err);
         btn.textContent = 'Try again';
         btn.disabled = false;
       }
