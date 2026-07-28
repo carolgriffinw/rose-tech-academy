@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS vs Azure vs Google Cloud: A Beginner's Comparison — ROSE Tech Academy</title>
+  <meta name="description" content="Understanding the differences between the three major cloud providers to help you choose where to focus first.">
+  <meta name="author" content="ROSE Tech Academy">
+  <meta name="theme-color" content="#0B1F3A">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="AWS vs Azure vs Google Cloud: A Beginner's Comparison — ROSE Tech Academy">
+  <meta property="og:description" content="Understanding the differences between the three major cloud providers to help you choose where to focus first.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://rosetechacademy.com/blog-aws-vs-azure-vs-google-cloud.html">
+  <link rel="canonical" href="https://rosetechacademy.com/blog-aws-vs-azure-vs-google-cloud.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="js/main.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AWS vs Azure vs Google Cloud: A Beginner's Comparison — ROSE Tech Academy",
+    "description": "Understanding the differences between the three major cloud providers to help you choose where to focus first.",
+    "author": {"@type": "Organization", "name": "ROSE Tech Academy"},
+    "publisher": {"@type": "Organization", "name": "ROSE Tech Academy", "url": "https://rosetechacademy.com"},
+    "url": "https://rosetechacademy.com/blog-aws-vs-azure-vs-google-cloud.html"
+  }
+  </script>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="site-nav" id="site-nav" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="./" class="nav-logo" aria-label="ROSE Tech Academy home">
+          <img src="images/logo.png" alt="ROSE Tech Academy - Innovate. Connect. Grow." class="nav-logo-img">
+        </a>
+      <ul class="nav-links" role="list">
+        <li><a href="./" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="learning-paths.html" class="nav-link">Learning Paths</a></li>
+        <li><a href="career-resources.html" class="nav-link">Careers</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="partners.html" class="nav-link">Partners</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-theme-btn" data-theme-toggle aria-label="Toggle dark mode"></button>
+        <a href="learning-paths.html" class="nav-cta">Explore Learning Paths</a>
+        <button class="nav-menu-btn" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+  <ul class="mobile-menu-links" role="list">
+    <li><a href="./" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="learning-paths.html" class="nav-link">Learning Paths</a></li>
+    <li><a href="career-resources.html" class="nav-link">Career Resources</a></li>
+    <li><a href="blog.html" class="nav-link">Blog</a></li>
+    <li><a href="partners.html" class="nav-link">Partners</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="mobile-menu-cta">
+    <a href="learning-paths.html" class="btn btn-primary btn-lg">Explore Learning Paths</a>
+    <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+  </div>
+</div>
+
+<main id="main-content">
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container page-hero-inner">
+    <div class="breadcrumb" data-reveal>
+      <a href="./">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="blog.html">Blog</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>Cloud Computing</span>
+    </div>
+    <div class="article-card-image" style="height:220px;border-radius:var(--radius-xl);margin:var(--space-6) 0;overflow:hidden;position:relative;" data-reveal data-delay="1">
+      <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,31,58,0.85),rgba(11,90,139,0.65));display:flex;align-items:center;justify-content:center;">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,0.7)" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+      </div>
+    </div>
+    <h1 class="page-hero-title" id="page-title" data-reveal data-delay="2">AWS vs Azure vs Google Cloud: A Beginner's Comparison</h1>
+  </div>
+</section>
+
+<!-- ============ ARTICLE BODY ============ -->
+<section class="section" aria-labelledby="article-content">
+  <div class="container">
+    <div class="article-layout">
+      <article>
+        <div class="article-meta-bar" data-reveal>
+          <span class="article-category-badge">Cloud Computing</span>
+          <span>ROSE Tech Academy</span>
+          <span>·</span>
+          <span>9 min read</span>
+        </div>
+        <div class="article-prose" data-reveal>
+          <p>When you decide to learn cloud computing, one of the first questions you'll face is: which cloud platform should I learn? AWS, Azure, and Google Cloud each have passionate advocates, distinct strengths, and different certification ecosystems. Here's an honest, beginner-friendly comparison to help you decide where to invest your time.</p>
+
+          <h2 id="market-share">Market Share and Employer Demand</h2>
+          <p>As of 2025, the cloud market breaks down roughly as follows:</p>
+          <ul>
+            <li><strong>AWS:</strong> ~31% market share — the clear market leader</li>
+            <li><strong>Microsoft Azure:</strong> ~25% market share — rapidly growing, dominant in enterprise</li>
+            <li><strong>Google Cloud:</strong> ~11% market share — strong in AI/ML and data workloads</li>
+          </ul>
+          <p>This matters because job postings reflect market share. AWS skills appear in more job postings overall, but Azure skills are highly sought in regulated industries (government, healthcare, finance) that rely on Microsoft's enterprise ecosystem.</p>
+
+          <div class="article-callout">
+            <p><strong>Tip:</strong> Search for cloud roles in your target industry or city before choosing a platform. If local employers use Azure, Azure skills get you hired faster — even if AWS is globally larger.</p>
+          </div>
+
+          <h2 id="aws">Amazon Web Services (AWS)</h2>
+          <p>AWS was the first major cloud platform (launched 2006) and remains the broadest in terms of service offerings — 200+ services across compute, storage, databases, networking, AI, IoT, and more.</p>
+          <p><strong>Strengths:</strong></p>
+          <ul>
+            <li>Largest number of job postings globally</li>
+            <li>Widest ecosystem of tools and integrations</li>
+            <li>Strong free tier for learning and experimentation</li>
+            <li>Best-in-class documentation and community resources</li>
+          </ul>
+          <p><strong>Challenges for beginners:</strong></p>
+          <ul>
+            <li>The sheer number of services can be overwhelming</li>
+            <li>Pricing can be confusing; unexpected charges are common for new users</li>
+          </ul>
+          <p><strong>Entry cert:</strong> AWS Certified Cloud Practitioner (~$150)</p>
+
+          <h2 id="azure">Microsoft Azure</h2>
+          <p>Azure is the dominant cloud platform in enterprise environments, particularly at organizations already using Microsoft products (Windows Server, Active Directory, Office 365, Dynamics). It has deep integrations with Microsoft's ecosystem and is the preferred choice for hybrid cloud deployments.</p>
+          <p><strong>Strengths:</strong></p>
+          <ul>
+            <li>Dominant in enterprise and regulated industries</li>
+            <li>Seamless integration with Microsoft 365, Active Directory, and on-premises systems</li>
+            <li>Excellent free learning resources via Microsoft Learn</li>
+            <li>Strong in government, healthcare, and financial services sectors</li>
+          </ul>
+          <p><strong>Entry cert:</strong> Microsoft Azure Fundamentals AZ-900 (~$165)</p>
+
+          <h2 id="gcp">Google Cloud Platform</h2>
+          <p>Google Cloud (GCP) is the smallest of the three in market share, but it punches above its weight in data, analytics, and AI/ML workloads. Companies using BigQuery, TensorFlow, or Vertex AI often prefer GCP for those specific tasks.</p>
+          <p><strong>Strengths:</strong></p>
+          <ul>
+            <li>Best-in-class data analytics and AI/ML services</li>
+            <li>Competitively priced for compute-intensive workloads</li>
+            <li>Strong Kubernetes capabilities (Google invented Kubernetes)</li>
+          </ul>
+          <p><strong>Entry cert:</strong> Google Cloud Digital Leader (~$200)</p>
+
+          <h2 id="choosing">How to Choose</h2>
+          <p>Here are practical decision rules:</p>
+          <ul>
+            <li><strong>If you want the most job opportunities overall:</strong> Start with AWS</li>
+            <li><strong>If you work at or target enterprise/government employers:</strong> Start with Azure</li>
+            <li><strong>If you're interested in data, analytics, or AI/ML:</strong> GCP is worth considering</li>
+            <li><strong>If your current employer uses a specific cloud:</strong> Learn that one first</li>
+          </ul>
+          <p>You don't have to pick just one forever. Many cloud professionals hold certs on multiple platforms over time. But start with one and build depth before breadth.</p>
+
+          <h2 id="certifications">Entry-Level Certifications</h2>
+          <p>All three providers offer beginner-friendly, non-technical foundational certifications. They cover cloud concepts, pricing, security basics, and the provider's core services. Any of them can be passed in 4–8 weeks using free official study materials.</p>
+          <p>Explore the <a href="path-cloud-computing.html">ROSE Tech Academy Cloud Computing Learning Path</a> for a curated set of resources whichever platform you choose.</p>
+        </div>
+      </article>
+
+      <aside class="article-sidebar" data-reveal data-delay="2">
+        <div class="article-sidebar-card">
+          <h2 class="article-sidebar-title">In This Article</h2>
+          <ul class="article-toc">
+              <li><a href="#market-share">Market Share and Employer Demand</a></li>
+              <li><a href="#aws">Amazon Web Services (AWS)</a></li>
+              <li><a href="#azure">Microsoft Azure</a></li>
+              <li><a href="#gcp">Google Cloud Platform</a></li>
+              <li><a href="#choosing">How to Choose</a></li>
+              <li><a href="#certifications">Entry-Level Certifications</a></li>
+          </ul>
+        </div>
+        <div class="article-sidebar-card">
+          <h2 class="article-sidebar-title">Related Articles</h2>
+          <ul class="article-related-list">
+              <li><a href="blog-how-to-start-a-career-in-cloud-computing.html">How to Start a Career in Cloud Computing</a></li>
+              <li><a href="blog-az-900-vs-ai-900.html">AZ-900 vs AI-900: Which Should You Take First?</a></li>
+              <li><a href="blog-choosing-your-first-ai-certification.html">Choosing Your First AI Certification</a></li>
+              <li><a href="path-cloud-computing.html">Cloud Computing Learning Path</a></li>
+          </ul>
+        </div>
+        <a href="learning-paths.html" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">Explore Learning Paths</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section" style="background:var(--color-primary);text-align:center" aria-labelledby="cta-title">
+  <div class="container">
+    <div data-reveal>
+      <h2 class="section-title" id="cta-title" style="color:#fff">Ready to Take Your Next Step?</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.7);margin-inline:auto">Explore our curated learning paths and start building the skills employers are looking for.</p>
+      <div style="margin-top:var(--space-6);display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap">
+        <a href="learning-paths.html" class="btn btn-primary btn-lg">View All Paths</a>
+        <a href="contact.html" class="btn btn-secondary btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="./" class="footer-logo" aria-label="ROSE Tech Academy home">
+          <img src="images/logo.png" alt="ROSE Tech Academy" class="footer-logo-img">
+        </a>
+        <p class="footer-desc">Helping learners build technology skills, earn industry certifications, and confidently pursue careers in the digital workforce.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://learn.microsoft.com" class="footer-social-link" aria-label="Microsoft Learn" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="0" y="0" width="7" height="7" fill="rgba(255,255,255,0.6)"/><rect x="9" y="0" width="7" height="7" fill="rgba(255,255,255,0.6)"/><rect x="0" y="9" width="7" height="7" fill="rgba(255,255,255,0.6)"/><rect x="9" y="9" width="7" height="7" fill="rgba(255,255,255,0.6)"/></svg>
+          </a>
+          <a href="mailto:hello@rosetechacademy.com" class="footer-social-link" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Company</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="about.html">About ROSE</a></li>
+          <li><a href="about.html#mission">Our Mission</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Learning Paths</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="path-cloud-computing.html">Cloud Computing</a></li>
+          <li><a href="path-cybersecurity.html">Cybersecurity</a></li>
+          <li><a href="path-data-analytics.html">Data Analytics</a></li>
+          <li><a href="path-artificial-intelligence.html">Artificial Intelligence</a></li>
+          <li><a href="path-project-management.html">Project Management</a></li>
+          <li><a href="path-generative-ai.html">Generative AI</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Resources</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="career-resources.html">Career Resources</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="learning-paths.html">All Learning Paths</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Legal</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-use.html">Terms of Use</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        <p class="footer-copyright">© 2024–2025 ROSE Tech Academy. All rights reserved.</p>
+        <p class="footer-microsoft-badge">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="0" y="0" width="6" height="6" fill="rgba(255,255,255,0.3)"/><rect x="8" y="0" width="6" height="6" fill="rgba(255,255,255,0.3)"/><rect x="0" y="8" width="6" height="6" fill="rgba(255,255,255,0.3)"/><rect x="8" y="8" width="6" height="6" fill="rgba(255,255,255,0.3)"/></svg>
+          Microsoft 365 Powered
+        </p>
+      </div>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-use.html">Terms</a>
+        <a href="accessibility.html">Accessibility</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
