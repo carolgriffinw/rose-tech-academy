@@ -105,24 +105,44 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const forms = document.querySelectorAll('[data-newsletter-form]');
   forms.forEach(form => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const input = form.querySelector('input[type="email"]');
       const btn = form.querySelector('button[type="submit"]');
       if (!input || !input.value) return;
 
-      btn.textContent = 'Subscribed!';
+      const originalText = btn.textContent;
+      btn.textContent = 'Subscribing…';
       btn.disabled = true;
-      btn.style.background = 'var(--color-success)';
-      btn.style.color = '#fff';
-      input.value = '';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (response.ok) {
+          btn.textContent = 'Subscribed!';
+          btn.style.background = 'var(--color-success)';
+          btn.style.color = '#fff';
+          input.value = '';
+        } else {
+          btn.textContent = 'Try again';
+          btn.disabled = false;
+        }
+      } catch (err) {
+        console.error('Newsletter form submission failed:', err);
+        btn.textContent = 'Try again';
+        btn.disabled = false;
+      }
 
       setTimeout(() => {
-        btn.textContent = 'Subscribe';
+        btn.textContent = originalText;
         btn.disabled = false;
         btn.style.background = '';
         btn.style.color = '';
-      }, 3000);
+      }, 4000);
     });
   });
 });
