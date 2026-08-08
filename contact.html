@@ -224,8 +224,7 @@
             document.getElementById('message').value.trim()
           ].join('\n'));
           window.location.href = `mailto:${recipient}?subject=${mailtoSubject}&body=${mailtoBody}`;
-          window.location.href = `mailto:${recipient}?subject=${mailtoSubject}&body=${mailtoBody}`;
-          successMsg.style.display = 'block';
+          successMsg.textContent = 'Your email app should open with a draft message. Send that email there to contact us.';
           successMsg.style.display = 'block';
           form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         } else {
