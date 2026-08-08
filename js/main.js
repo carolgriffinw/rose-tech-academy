@@ -116,8 +116,10 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.disabled = true;
 
       try {
-        if (form.action.startsWith('mailto:')) {
-          const recipient = form.action.replace('mailto:', '');
+        const action = form.getAttribute('action') || '';
+
+        if (action.startsWith('mailto:')) {
+          const recipient = action.replace('mailto:', '');
           const subject = encodeURIComponent('Newsletter Subscription');
           const body = encodeURIComponent(`Please subscribe this email address: ${input.value.trim()}`);
           window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
