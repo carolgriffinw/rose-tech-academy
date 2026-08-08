@@ -90,7 +90,10 @@
     <div class="contact-grid">
       <div class="contact-form" data-reveal>
         <h3 class="path-sidebar-title" style="font-size:var(--text-lg);margin-bottom:var(--space-6)">Send Us a Message</h3>
-        <form id="contact-form" action="mailto:carolgriffin@rosetechacademy.com" method="POST" novalidate>
+        <form id="contact-form" action="https://formsubmit.co/carolgriffin@rosetechacademy.com" method="POST" novalidate>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_subject" value="New Contact Form Submission — ROSE Tech Academy">
           <div class="form-group">
             <label class="form-label" for="name">Full Name <span aria-hidden="true">*</span></label>
             <input class="input" id="name" name="name" type="text" required placeholder="Jane Doe" autocomplete="name">
