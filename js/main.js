@@ -116,20 +116,32 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.disabled = true;
 
       try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { Accept: 'application/json' }
-        });
+        const action = form.getAttribute('action') || '';
 
-        if (response.ok) {
-          btn.textContent = 'Subscribed!';
+        if (action.startsWith('mailto:')) {
+          const recipient = action.slice('mailto:'.length);
+          const subject = encodeURIComponent('Newsletter Subscription');
+          const body = encodeURIComponent(`Please subscribe this email address: ${input.value.trim()}`);
+          window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+          btn.textContent = 'Open email app';
           btn.style.background = 'var(--color-success)';
           btn.style.color = '#fff';
-          input.value = '';
         } else {
-          btn.textContent = 'Try again';
-          btn.disabled = false;
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' }
+          });
+
+          if (response.ok) {
+            btn.textContent = 'Subscribed!';
+            btn.style.background = 'var(--color-success)';
+            btn.style.color = '#fff';
+            input.value = '';
+          } else {
+            btn.textContent = 'Try again';
+            btn.disabled = false;
+          }
         }
       } catch (err) {
         console.error('Newsletter form submission failed:', err);
