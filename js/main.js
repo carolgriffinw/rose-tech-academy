@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const action = form.getAttribute('action') || '';
 
         if (action.startsWith('mailto:')) {
-          const recipient = action.replace('mailto:', '');
+          const recipient = action.slice('mailto:'.length);
           const subject = encodeURIComponent('Newsletter Subscription');
           const body = encodeURIComponent(`Please subscribe this email address: ${input.value.trim()}`);
           window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;

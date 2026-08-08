@@ -215,7 +215,7 @@
         const action = form.getAttribute('action') || '';
 
         if (action.startsWith('mailto:')) {
-          const recipient = action.replace('mailto:', '');
+          const recipient = action.slice('mailto:'.length);
           const mailtoSubject = encodeURIComponent(document.getElementById('subject').value);
           const mailtoBody = encodeURIComponent([
             `Name: ${document.getElementById('name').value.trim()}`,
@@ -223,11 +223,10 @@
             '',
             document.getElementById('message').value.trim()
           ].join('\n'));
-
           window.location.href = `mailto:${recipient}?subject=${mailtoSubject}&body=${mailtoBody}`;
-          successMsg.textContent = 'Your email app should open with this message ready to send.';
+          window.location.href = `mailto:${recipient}?subject=${mailtoSubject}&body=${mailtoBody}`;
           successMsg.style.display = 'block';
-          form.reset();
+          successMsg.style.display = 'block';
           form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         } else {
           const data = new FormData(form);
