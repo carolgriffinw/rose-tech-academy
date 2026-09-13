@@ -956,3 +956,19 @@
   margin-bottom: 0;
 }
 
+
+/* ── Mission & Vision section (About page) ── */
+.mission-vision-section {
+  text-align: center;
+}
+
+.mission-vision-title {
+  font-size: var(--text-2xl);
+  text-align: center;
+}
+
+.mission-vision-subtitle {
+  font-size: var(--text-lg);
+  text-align: center;
+  max-width: 62ch;
+}
