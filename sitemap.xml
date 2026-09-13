@@ -9,6 +9,7 @@
   <url><loc>https://rosetechacademy.com/partners.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://rosetechacademy.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://rosetechacademy.com/faq.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rosetechacademy.com/sitemap.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
 
   <!-- Learning paths -->
   <url><loc>https://rosetechacademy.com/path-cloud-computing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
