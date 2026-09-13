@@ -135,6 +135,8 @@
   height: 140px;
   width: auto;
   display: block;
-  filter: brightness(0) invert(1);
   object-fit: contain;
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  padding: 6px 14px;
 }
