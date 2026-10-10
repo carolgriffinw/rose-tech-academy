@@ -84,6 +84,8 @@ a, button, [role='button'], input, textarea, select {
 .container--narrow  { max-width: var(--content-narrow); }
 .container--default { max-width: var(--content-default); }
 
+[hidden] { display: none !important; }
+
 .section    { padding-block: clamp(var(--space-12), 8vw, var(--space-24)); }
 .section--lg { padding-block: clamp(var(--space-16), 10vw, var(--space-32)); }
 
