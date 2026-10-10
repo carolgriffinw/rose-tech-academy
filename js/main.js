@@ -169,4 +169,10 @@ document.addEventListener('DOMContentLoaded', () => {
       link.setAttribute('aria-current', 'page');
     }
   });
+  if (path.startsWith('path-') || path === 'learning-paths.html') {
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(t => t.classList.add('active'));
+  }
+  document.querySelectorAll('.nav-dropdown-link').forEach(link => {
+    if (link.getAttribute('href') === path) link.setAttribute('aria-current', 'page');
+  });
 });
