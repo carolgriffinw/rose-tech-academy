@@ -111,6 +111,99 @@
   font-weight: 600;
 }
 
+/* ── Dropdown ── */
+.nav-item-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  gap: var(--space-1);
+}
+
+.nav-dropdown-caret {
+  transition: transform var(--transition-interactive);
+}
+
+.nav-item-dropdown:hover .nav-dropdown-caret,
+.nav-item-dropdown:focus-within .nav-dropdown-caret {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 240px;
+  margin: 0;
+  padding: var(--space-2);
+  list-style: none;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.14);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  z-index: 1000;
+}
+
+.nav-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+}
+
+.nav-item-dropdown:hover .nav-dropdown,
+.nav-item-dropdown:focus-within .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-link {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  transition: color var(--transition-interactive), background var(--transition-interactive);
+}
+
+.nav-dropdown-link:hover,
+.nav-dropdown-link:focus-visible {
+  color: var(--color-text);
+  background: var(--color-surface-2);
+}
+
+.nav-dropdown-link--all {
+  font-weight: 600;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  margin-bottom: var(--space-1);
+}
+
+.mobile-menu-sublinks {
+  list-style: none;
+  margin: 0 0 var(--space-1);
+  padding: 0 0 0 var(--space-4);
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-links .mobile-sub-link {
+  font-size: var(--text-sm);
+  padding: var(--space-2) var(--space-4);
+  color: var(--color-text-muted);
+}
+
 /* ── Nav actions ── */
 .nav-actions {
   display: flex;
