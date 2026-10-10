@@ -60,7 +60,9 @@
 
 .hero-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+  text-align: center;
   gap: var(--space-12);
   align-items: center;
 }
@@ -124,6 +126,7 @@
 .hero-actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-4);
   flex-wrap: wrap;
 }
@@ -131,6 +134,7 @@
 /* Stats */
 .hero-stats {
   display: flex;
+  justify-content: center;
   gap: var(--space-8);
   margin-top: var(--space-10);
   padding-top: var(--space-8);
@@ -258,7 +262,6 @@
 
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-visual { display: none; }
   .hero-title { font-size: var(--text-2xl); }
 }
 
