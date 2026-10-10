@@ -187,6 +187,10 @@
   gap: var(--space-4);
 }
 
+.path-resource-item[hidden] {
+  display: none;
+}
+
 .path-resource-item {
   display: flex;
   align-items: flex-start;
