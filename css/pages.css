@@ -976,3 +976,7 @@
   text-align: center;
   max-width: 62ch;
 }
+
+/* Path cards: neutral text, never browser default link blue/purple */
+.path-card, .path-card:visited, .path-card:hover, .path-card:focus { color: var(--color-text); text-decoration: none; }
+.path-card-icon { color: var(--color-text); }
