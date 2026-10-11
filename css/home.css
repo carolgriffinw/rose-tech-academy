@@ -120,6 +120,7 @@
   line-height: 1.65;
   margin-bottom: var(--space-8);
   max-width: 52ch;
+  margin-inline: auto;
 }
 
 /* Actions */
