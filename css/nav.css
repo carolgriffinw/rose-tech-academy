@@ -313,6 +313,10 @@
   .mobile-menu  { display: block; }
 }
 
+@media (max-width: 900px) {
+  .nav-logo-img { height: 72px; }
+}
+
 @media (max-width: 480px) {
   .nav-logo-tagline { display: none; }
 }
