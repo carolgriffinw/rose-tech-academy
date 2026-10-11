@@ -314,6 +314,7 @@
 }
 
 @media (max-width: 900px) {
+  .nav-inner { height: 84px; }
   .nav-logo-img { height: 72px; }
 }
 
