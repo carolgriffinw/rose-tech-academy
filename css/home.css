@@ -517,7 +517,7 @@
 
 .article-card-image {
   aspect-ratio: 16/9;
-  background: linear-gradient(135deg, #2B4A5A 0%, #3A6480 100%);
+  background: linear-gradient(135deg, #3A4447 0%, #4B5457 100%);
   position: relative;
   overflow: hidden;
   display: flex;
