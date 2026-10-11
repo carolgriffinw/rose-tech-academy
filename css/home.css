@@ -262,8 +262,14 @@
 .hero-path-dot { width: 6px; height: 6px; border-radius: 50%; }
 
 @media (max-width: 900px) {
-  .hero-inner { grid-template-columns: 1fr; }
+  .hero { min-height: auto; }
+  .hero-content { padding-block: var(--space-12) var(--space-16); }
+  .hero-inner { grid-template-columns: 1fr; justify-items: center; }
+  .hero-text { width: 100%; text-align: center; }
   .hero-title { font-size: var(--text-2xl); }
+  .hero-subtitle { margin-inline: auto; }
+  .hero-actions { flex-direction: column; align-items: stretch; width: 100%; max-width: 360px; margin-inline: auto; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
 }
 
 /* ══════════════ LEARNING PATHS ══════════════ */
